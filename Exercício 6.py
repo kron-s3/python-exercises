@@ -18,7 +18,7 @@ def fatorial(num):
             fat *= i
         return fat
 
-# programa principal
+# Programa principal
 numero = valida_num('Digite um número: ')
 resultado = fatorial(numero)
 print(f'{numero}! = {resultado}')
