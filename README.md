@@ -17,16 +17,16 @@ Evoluir minha lógica de programação e boas práticas de código.
 
 This repository contains Python exercises and small projects developed during my learning journey.
 
-## 🎯 Purpose
+## Purpose
 The goal of this repository is to improve my programming logic, write cleaner code, and build a strong foundation in Python.
 
-## 🚀 Future Improvements
+## Future Improvements
 - More structured projects
 - Better code organization
 - Real-world problem solving
 - Introduction to cybersecurity scripts
 
-## 🛠️ Technologies
+## Technologies
 - Python 3
 
 ---
