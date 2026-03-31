@@ -16,4 +16,3 @@ idade = valida_idade('idade: ')
 arquivo = open('cadastro simples.txt', 'a')
 arquivo.write(f'{nome} - {idade}\n')
 arquivo.close()
-
