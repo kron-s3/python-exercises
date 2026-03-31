@@ -2,12 +2,6 @@
 
 Este repositório contém exercícios que estou desenvolvendo durante meus estudos em programação.
 
-## Conteúdo
-- Validação de dados
-- Cálculo de fatorial
-- Estruturas de repetição
-- Tratamento de exceções
-
 ## Objetivo
 Evoluir minha lógica de programação e boas práticas de código.
 
