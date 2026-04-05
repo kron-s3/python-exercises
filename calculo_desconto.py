@@ -1,21 +1,80 @@
-cont = 1
-total_produtos = 0
-total_descontos = 0
-qtd_produtos = int(input('Digite a quantidade de produtos em sua notinha: '))
-
-while cont <= qtd_produtos:
-	valor = float(input(f'Digite o valor do {cont}° produto: '))
-	desconto = float(input(f'Digite o valor do desconto do {cont}° produto: '))
+nome = input('Por favor, digite o seu nome: ')
+while nome == '':
+	nome = input('Por favor, digite o seu nome: ')
+	continue
 	
-	while desconto >= valor:
-		print('Desconto não pode ser maior que o valor do produto.')
-		desconto = float(input('Digite o desconto novamente: '))
-		
-	cont = cont + 1
-	total_produtos = total_produtos + valor
-	total_descontos = total_descontos + desconto
+print(f'Olá {nome}, seja bem vindo-ao meu programa.')
 
 print(' ')
-print(f'Valor Total: R${total_produtos:.2f}')
-print(f'Total em descontos: R${total_descontos:.2f}')	
-print(f'Valor final: R${total_produtos - total_descontos:.2f}.')
+
+print('CATEGORIAS')
+print('1 - Supermercado')
+print('2 - Refeições Fora')
+
+print('')
+
+categ = int(input('Qual categoria deseja analisar? '))
+
+while categ != 1 and categ != 2:
+	print('Categoria inválida, tente novamente.')
+	print(' ')
+	categ = int(input('Qual categoria deseja analisar?'))
+	continue
+
+if categ == 1:
+	print('Você escolheu a categoria 1 - Supermercado.')
+	
+	print(' ')
+	
+	qtd = int(input('Quantos produtos serão analisados? '))
+	
+	print(' ')
+	
+	cont = 1
+	valor_total = 0
+	soma_desconto = 0
+	
+	while cont <= qtd:
+		valor = float(input(f'Valor do {cont}° produto: R$'))
+		desconto = float(input(f'Desconto no {cont}° produto: R$'))
+		
+		print(' ')
+		
+		cont += 1
+		valor_total += valor
+		soma_desconto += desconto
+		valor_final = valor_total - soma_desconto
+	
+	print('Categoria: Supermercado')
+	print(f'Valor total: R${valor_total:.2f}.')
+	print(f'Total em descontos: R${soma_desconto:.2f}.')
+	print(f'Valor final: R${valor_final:.2f}')
+		
+elif categ == 2:
+	print('Você escolheu a categoria 2 - Refeições Fora.')
+	
+	print(' ')
+	
+	qtd = int(input('Quantos produtos serão analisados? '))
+	
+	print('')
+	
+	cont = 1
+	valor_total = 0
+	soma_desconto = 0
+	
+	while cont <= qtd:
+		valor = float(input(f'Valor do {cont}° produto: R$'))
+		desconto = float(input(f'Desconto no {cont}° produto: R$'))
+		
+		print(' ')
+		cont += 1
+		valor_total += valor
+		soma_desconto += desconto
+	
+		valor_final = valor_total - soma_desconto
+	
+	print('Categoria: Refeições Fora.')
+	print(f'Valor total: R${valor_total:.2f}.')
+	print(f'Total em descontos: R${soma_desconto:.2f}.')
+	print(f'Valor final: R${valor_final:.2f}')
